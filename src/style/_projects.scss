@@ -1,0 +1,39 @@
+.projects{
+    width: 100vw;
+}
+.projects__title{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--text{
+        font-size: 3em;
+    }
+}
+.projects__afisha{
+    display: flex;
+    & .l{
+        display: flex;
+        flex-direction: column;
+    }
+    & .r{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.afisha__img{
+    width: 50vw;
+    border-radius: 50px;
+}
+
+.afisha__aword{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--text{
+        position: absolute;
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+}
