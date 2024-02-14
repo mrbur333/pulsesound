@@ -2,12 +2,39 @@ canvas {
     top: 0;
     left: 0;
     overflow-y: hidden;
+    width: 100dvw!important;
+    height: 100dvh!important;
 }
 
 .hero {
     display: flex;
     justify-content: center; 
     align-items: center;
+}
+
+.hero__controls{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    &--play{
+        background-image: url('./img/play.svg');
+        background-repeat: no-repeat;
+    }
+    &--pause{
+        background-image: url('./img/pause.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+.hero__play{
+    display: block;
+}
+
+.hero__pause{
+    display: none;
 }
 
 .hero__title {
@@ -64,5 +91,6 @@ canvas {
     }
     .hero__subtitle{
         width: 360px;
+        left: 30vw;
     }
 }

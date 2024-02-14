@@ -7,14 +7,12 @@ import mainSound from '../../assets/music/Beats.mp3';
 
 
 const hero = document.querySelector(".hero");
-//const mute = document.querySelector(".mute");
+let windowWidth = window.innerWidth;
+let windowHeight= window.innerHeight;
+const controlsBtn = document.querySelector(".hero__controls");
 const renderer = new THREE.WebGLRenderer({antialias: true});
 renderer.setSize(window.innerWidth, window.innerHeight);
 hero.appendChild(renderer.domElement);
-
-
-let windowWidth = window.innerWidth;
-let windowHeight= window.innerHeight;
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -93,14 +91,14 @@ audioLoader.load('./assets/Beats.mp3', function(buffer) {
 	sound.setLoop(true);
 	sound.play();
 
-	/*	mute.addEventListener('click', function() {
+	controlsBtn.addEventListener('click', function() {
 		if(!sound.isPlaying){
 			sound.play();
 		} else if(sound.isPlaying){
 			sound.pause();
 		}
 	});
-	*/
+
 });
 
 const analyser = new THREE.AudioAnalyser(sound, 32);
