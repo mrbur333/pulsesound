@@ -1,6 +1,5 @@
 .about{
-    width: 70vw;
-    margin: 0 auto;
+    width: 100dvw;
 }
 .about__philer{
     display: flex;
@@ -29,6 +28,10 @@
     &--text{
         font-size: 1.3em;
     }
+}
+.about__content--subtext{
+    margin: 2em;
+    color: #3d3d3d;
 }
 .cube{
     height: 40%;

@@ -1,7 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html { overflow-x:hidden; }
+
 body {
     background-color: black;
     color:white;
-    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     font-size: 8px;
 }

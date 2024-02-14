@@ -6,7 +6,7 @@ import {OutputPass} from 'three/examples/jsm/postprocessing/OutputPass';
 import mainSound from '../../assets/music/Beats.mp3';
 
 
-const hero = document.querySelector(".hero");
+const hero = document.querySelector(".hero__sphere");
 let windowWidth = window.innerWidth;
 let windowHeight= window.innerHeight;
 const controlsBtn = document.querySelector(".hero__controls");
@@ -89,7 +89,6 @@ const audioLoader = new THREE.AudioLoader();
 audioLoader.load('./assets/Beats.mp3', function(buffer) {
 	sound.setBuffer(buffer);
 	sound.setLoop(true);
-	sound.play();
 
 	controlsBtn.addEventListener('click', function() {
 		if(!sound.isPlaying){
