@@ -71,8 +71,8 @@ if(windowWidth >= 1200) {
 	radius = 3;
 	detail = 25;
 } else if (windowWidth >= 500) {
-	radius = 2.8;
-	detail = 20;
+	radius = 2.5;
+	detail = 15;
 }
 
 let geo = new THREE.IcosahedronGeometry(radius, detail );

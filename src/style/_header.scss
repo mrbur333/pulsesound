@@ -1,12 +1,12 @@
 .header {
     height: 8dvh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header__hamburger {
-    width: 3em;
+    width: 6em;
 }

@@ -8,7 +8,7 @@
     height: 40vh;
 }
 .about__philer__img{
-    height: 100px;
+    height: 60px;
 }
 .about__content {
     display: flex;
@@ -23,7 +23,9 @@
 .about__content__post{
 
     &--title{
-        font-size: 2em;
+        font-size: 3em;
+        font-weight: 600;
+        margin: 1em 0 1em 0;
     }
     &--text{
         font-size: 1.3em;
@@ -43,6 +45,11 @@
     order:-1;
 }
 
+@media (min-width: 860px) {
+    .about__philer__img{
+        height: 100px;
+    }
+}
 @media (min-width: 1024px) {
     .cube{
         height: 30%;

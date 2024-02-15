@@ -10,11 +10,11 @@
 </head>
 <body>
   <header class="header">
-    <img src="./img/hamburger.svg" alt="" class="header__hamburger">
+    <img src="./img/hamburger.svg" alt="" class="header__hamburger"> 
   </header>
     <main>
 
-      <section class="hero">
+      <section class="hero" id="main">
         <div class="hero__title">
           <snap class="title__name title__name--subname">Отражение</snap>
           <snap class="title__name title__name--subname">Отражение</snap>
@@ -30,7 +30,7 @@
         
       </section>
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="projects__title">
           <p class="projects__title--text">ИЗБРАННАЯ ФИЛЬМОГРАФИЯ</p>
         </div>
@@ -62,7 +62,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__philer">
           <img src="./img/skob.svg" alt="" class="about__philer__img">
         </div>
@@ -97,7 +97,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <p class="contacts__text">
           Свяжись с нами
         </p>
@@ -113,10 +113,23 @@
       </section>
 
       <footer class="footer">
-
+        <p class="footer__text">
+          Создал и разработал Буров Алексей
+        </p>
       </footer>
         
     </main>
+
+    <div class="modal">
+      <img src="./img/close.svg" class="close" alt="">
+      <nav>
+        <li><a href="#main" class="modal__link">Главная</a></li>
+        <li><a href="#projects" class="modal__link">Проекты</a></li>
+        <li><a href="#about" class="modal__link">О нас</a></li>
+        <li><a href="#contacts" class="modal__link">Контакты</a></li>
+      </nav>
+      <div class="modal__social"></div>
+    </div>
 
     <script id="vertexshader" type="vertex">
         uniform float u_time;

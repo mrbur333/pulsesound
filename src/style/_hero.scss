@@ -40,11 +40,12 @@ canvas {
     flex-wrap: nowrap;
     overflow: hidden;
     font-size: 5em;
+    font-weight: 600;
     top: 30dvh;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     & .title__name {
-        margin-right: 1em;
+        //margin-right: 1em;
         background-image: linear-gradient(to right, 
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.1), 
@@ -68,14 +69,19 @@ canvas {
 
 .hero__subtitle{
     position: absolute;
-    text-align: right;
     width: 200px;
     font-size: 1.5em;
+    font-weight: 600;
     top: 60dvh;
-    left: 10vw;
+    left: 2vw;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     border-top: solid 1px rgb(255, 255, 255);
+}
+@media (min-width:560px) {
+    .hero__subtitle{
+        left: 10vw;
+    }
 }
 @media (min-width:860px) {
     .hero__title .title__name{
@@ -92,11 +98,33 @@ canvas {
         }
     }
     .hero__subtitle{
-        width: 360px;
-        left: 30vw;
+        width: 300px;
+        left: 10vw;
     }
     .hero__controls{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width:1024px) {
+    .hero__controls{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (min-width:1280px) {
+    .hero__title .title__name--subname{
+        display: block;
+    }
+    .hero__subtitle{
+        width: 350px;
+        left: 20vw;
+    }
+}
+@media (min-width:1920px) {
+    .hero__subtitle{
+        width: 350px;
+        left: 25vw;
     }
 }

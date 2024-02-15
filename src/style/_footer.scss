@@ -1,5 +1,13 @@
 .footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
     width: 100dvw;
     height: 30dvh;
-    background-image: url('./img/bg_bottom.png');
+}
+
+.footer__text{
+    margin: 2em;
+    font-weight: 100;
+    color:#818181;
 }

@@ -4,13 +4,24 @@
     box-sizing: border-box;
 }
 
-body, html { overflow-x:hidden; }
+body, html { 
+    overflow-x:hidden; 
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: black;
     color:white;
     font-family: 'Montserrat', sans-serif;
     font-size: 8px;
+    font-weight: 500;
+    
+}
+
+@media (min-width: 560px) {
+    body {
+        font-size: 9px;
+    }
 }
 
 @media (min-width: 640px) {
