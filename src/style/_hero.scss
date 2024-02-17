@@ -7,8 +7,8 @@ canvas {
     display: flex;
     justify-content: center; 
     align-items: center;
-    width: 100dvw;
-    height: 100dvh;
+    width: 100vw;
+    height: 100vh;
 }
 
 .hero__sphere{
@@ -55,21 +55,27 @@ canvas {
         -webkit-background-clip: text;
         &--subname{
             display: none;
+            animation-duration: 2s;
+            animation-name: slidein;
+
         }
         &--special{
             background-image: linear-gradient(to right, 
                 rgb(255, 255, 255),
                 rgba(255, 255, 255, 0.8), 
                 rgba(255, 255, 255, 0));
-            
             border-bottom: solid 1px rgb(255, 255, 255);
+            animation-duration: 1s;
+            animation-name: slidein;
         }
     }
 }
 
 .hero__subtitle{
     position: absolute;
+    overflow: hidden;
     width: 200px;
+    height: 60px;
     font-size: 1.5em;
     font-weight: 600;
     top: 60dvh;
@@ -77,7 +83,13 @@ canvas {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     border-top: solid 1px rgb(255, 255, 255);
+    
+    &--text{
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
 }
+
 @media (min-width:560px) {
     .hero__subtitle{
         left: 10vw;

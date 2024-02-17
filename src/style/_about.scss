@@ -5,10 +5,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 25vh;
 }
 .about__philer__img{
     height: 60px;
+    opacity: 0;
+    transform: translateY(20%);
 }
 .about__content {
     display: flex;
@@ -19,6 +21,8 @@
 .about__content__img{
     width: 18vw;
     border-radius: 20px;
+    opacity: 0;
+    transform: translateY(20%);
 }
 .about__content__post{
 
@@ -26,9 +30,13 @@
         font-size: 3em;
         font-weight: 600;
         margin: 1em 0 1em 0;
+        opacity: 0;
+        transform: translateY(20%);
     }
     &--text{
         font-size: 1.3em;
+        opacity: 0;
+        transform: translateY(20%);
     }
 }
 .about__content--subtext{

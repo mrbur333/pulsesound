@@ -4,12 +4,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 .contacts__text{
     font-size: 3em;
     margin-bottom: 120px;
+    opacity: 0;
+    transform: translateY(20%);
 }
-.contacts__info{
+.contacts__email, .contacts__phone{
     font-size: 2em;
+    margin: 0.5em;
+    opacity: 0;
+    transform: translateY(20%);
 }

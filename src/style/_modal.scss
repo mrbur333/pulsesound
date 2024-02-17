@@ -4,35 +4,42 @@
     position: fixed;
     top: 0;
     left: 0;
-
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: rgba(0, 70, 152, 0.2);
     backdrop-filter: blur(10px);
-    display: none;
+    display: flex;
     &--show{
-        display: flex;
+        opacity: 1;
+        transition: opacity 0.5s;
+        z-index: 100;
+    }
+    &--down{
+        opacity: 0;
+        z-index: -100;
+        transition: all 0.5s;
     }
 }
 
 .close{
     position: absolute;
-    top: 3em;
-    width: 6em;
+    top: 2em;
+    width: 5em;
 }
 
 nav {
     text-align: center;
     font-size: 3em;
-    
+    overflow: hidden;
     list-style-type: none;
     & li{
         margin: 1.5em;
-        & a:active,a:hover,a {
-          text-decoration: none;
-          color: #ffffff;
-        }
+        transform: translateX(-100vw);
     }
 }
-
+a:active,a:hover,a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff; 
+}
