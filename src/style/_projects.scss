@@ -2,12 +2,14 @@
     width: 100vw;
 }
 .projects__title{
-    height: 40vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     &--text{
+        opacity: 0;
+        transform: translateY(20%);
         font-size: 2.5em;
         font-weight: 600;
     }
