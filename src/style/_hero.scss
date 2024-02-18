@@ -75,7 +75,7 @@ canvas {
     position: absolute;
     overflow: hidden;
     width: 200px;
-    height: 60px;
+    height: 5em;
     font-size: 1.5em;
     font-weight: 600;
     top: 70dvh;
@@ -138,5 +138,6 @@ canvas {
     .hero__subtitle{
         width: 350px;
         left: 25vw;
+
     }
 }
