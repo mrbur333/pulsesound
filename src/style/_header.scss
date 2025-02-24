@@ -3,7 +3,7 @@
     width: 100%;
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     z-index: 10;
 }
@@ -15,14 +15,24 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.header__logo{
+    width: 6em;
+    height: 4em;
+    margin: 1em 3em;
+    animation-duration: 2s;
+    animation-name: fadein;
+}
+
 .header__menu{
     background-image: url(./img/hamburger.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 6em;
+    width: 4em;
     height: 6em;
     animation-duration: 2s;
     animation-name: fadein;
+    margin: 0 3em;
 }
 
 .header--show{
