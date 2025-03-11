@@ -17,9 +17,9 @@
 }
 
 .header__logo{
-    width: 6em;
-    height: 4em;
-    margin: 1em 3em;
+    width: 10em;
+    height: 7.6dvh;
+    margin: 0.2em 3em;
     animation-duration: 2s;
     animation-name: fadein;
 }
@@ -33,6 +33,7 @@
     animation-duration: 2s;
     animation-name: fadein;
     margin: 0 3em;
+    cursor: pointer;
 }
 
 .header--show{
