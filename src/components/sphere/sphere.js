@@ -3,7 +3,7 @@ import {EffectComposer} from 'three/examples/jsm/postprocessing/EffectComposer';
 import {RenderPass} from 'three/examples/jsm/postprocessing/RenderPass';
 import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass';
 import {OutputPass} from 'three/examples/jsm/postprocessing/OutputPass';
-import mainSound from '../../assets/music/Beats.mp3';
+import mainSound from '../../assets/music/beat_compressed.mp3';
 
 
 const hero = document.querySelector(".hero__sphere");
@@ -86,7 +86,7 @@ camera.add(listener);
 const sound = new THREE.Audio(listener);
 
 const audioLoader = new THREE.AudioLoader();
-audioLoader.load('./assets/Beats.mp3', function(buffer) {
+audioLoader.load('./assets/beat_compressed.mp3', function(buffer) {
 	sound.setBuffer(buffer);
 	sound.setLoop(true);
 
